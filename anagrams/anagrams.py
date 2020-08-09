@@ -1,11 +1,11 @@
-# module used for permutations
+# modulo utilizado para permutações
 import itertools
-# the user will type a word or words  
-word = input("type a word ")
+# o usuario ira colocar a palavra, o programa executara: 
+word = input("digite uma palavra: ")
 x = word.lower()
-# the program will split were it finds a space in the word variable
+# o programa ira seprar o nome onde tiver espaço
 y = x.split(" ")
-#variable
+#variaveis
 F = 1
 permutations = []
 repetidos = 1
@@ -13,47 +13,45 @@ F1 = 1
 letra = [] 
 letras = []
 multi = 1
-#the following loop will take the list (y) and will be looping through all the terms in the list
+#o loop a seguir irá pegar a lista(y) e ira ficar fazendo loop em todos os termos da lista
 for posi in y:
     w = str(posi)
-#the following loop will take the word (w) that left the list (y) and will go through all the letters of the string (w)
+    #o loop a seguir irá pegar a palavra(w) que saiu da lista (y) e ira passar por todas as letras da string(w)
     for char in w:
         letra.append(char)
-        #if the letter is not in the list (letras) the program will execute:
+        #se a letra não estiver na lista(letras) o programa executara:
         if char not in letras:
             word = x.count(char)
             letras.append(char)
             multi *= word 
-            # calculating the factorial
+            #algoritmo de fatorial: 
             while multi > 1:
                 F1 *= multi
                 multi -= 1 
 palal = len(x)
-#if the system finds space in the name, it will take the number of letters minus the number of spaces
+#se o sistema encontrar espaço no nome, ele ira pegar o numero de letras menos o numero de espaços
 if (" ") in x:
     espa = x.count(" ")
     palal -= espa
 quantidade = palal
-#factorial algorithm: as long as the number of letters in the word is greater than 1, the program will execute: 
+#algoritmo de fatorial: enquanto o numero de letras na palavra for maior que 1, o programa ira executar: 
 while palal > 1:
     F *= palal
     palal -= 1
-#factorial result:
+#resultado do fatorial:
 result = F / F1
-print(f"the number of letters in: {x} is: {quantidade}")
-print(f"the number of anagrams possible with the word(s) {x} is: {result}")
-print("do you wish to see all permutations? ")
+print(f"o numero de caracteres em: {x} é igual a {quantidade}")
+print(f"o numero de anagramas possiveis com a(s) palavra(s) {x} é igual a {result}")
+print("deseja executar todas as possibilidades de anagramas?")
 resp = input()
-#if the user answers "yes" to the question, the program will execute:
-if resp == ("yes"):
+#se o usuario responder "sim" a pergunta, o programa ira executar:
+if resp == ("sim"):
     permut = itertools.permutations(letra)
     for per in permut:
-        #if the anagram order is not in the permutations array, execute:
+        #se a ordem do anagrama não esta no array permutations, executara:
         if per not in permutations:
             permutations.append(per)
             print(per)
-else:
-    print("thank you for using this program")
-stop = input("type anything to stop the program")
+stop = input("digite qualquer coisa para terminar a execução")
 
 
