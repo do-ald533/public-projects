@@ -4,5 +4,5 @@
 -if you wish, you can also see all the anagrams possible
 
 <p align="center">
-  <img width="460" height="300" src="https://wordsmith.org/awad/images/peek-clam-and-make-anagrams.jpg/460/300">
+  <img width="300" height="300" src="https://wordsmith.org/awad/images/peek-clam-and-make-anagrams.jpg/460/300">
 </p>
