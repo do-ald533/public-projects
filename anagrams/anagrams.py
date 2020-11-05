@@ -55,5 +55,3 @@ if resp == ("yes"):
 else:
     print("thank you for using this program")
 stop = input("type anything to stop the program")
-
-
