@@ -12,7 +12,7 @@
 ---
 
 ### How to use?
-to use the '.exe' file, you need to download it, then you just simply click it to execute
+to use the '.exe' file, you need to download it, then you just simply click it to execute on the location you downloaded it
 
 ---
 

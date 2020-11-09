@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # module used for permutations
 import itertools
 # the user will type a word or words  
