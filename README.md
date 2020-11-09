@@ -14,7 +14,7 @@
 
 ### How to use?
 - (*Windows*) To execute the program, you need to download the .exe file, then use the file explorer to navigate were the file was downloaded, then just simply double click on the file.
-    - Note: The windows defender will not let you execute the file, to execute it press in *more information*,then click *execute anyway*.
+    - **Note**: The windows defender will not let you execute the file, to execute it press in *more information*,then click *execute anyway*.
 
 
 - (*Linux*) To use the linux executable first you need to download the .`py` file, after this step is complete, use the terminal to navigate to the folder were the .`py` file was downloaded, then just simply type: `./file-name.py`
